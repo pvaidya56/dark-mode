@@ -1,4 +1,5 @@
-import useLocalStorage from './useLocalStorage';
+import React from 'react'
+import {useLocalStorage} from './useLocalStorage';
 
 const useDarkMode = (bool) => {
     const [mode, setMode] = useLocalStorage("darkMode", bool);
