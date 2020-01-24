@@ -5,7 +5,7 @@ const useDarkMode = (bool) => {
     const [mode, setMode] = useLocalStorage("darkMode", bool);
   
     React.useEffect(() => {
-      window.localStorage.getItem("darkMode") === "true"
+      mode
         ? document.querySelector("body").classList.add("dark-mode")
         : document.querySelector("body").classList.remove("dark-mode");
     }, [mode]);
